@@ -13,10 +13,14 @@ language: php
 
 services:
   - redis-server
+  - mysql
 
 addons:
   apt:
+    sources:
+      - github-git-lfs-xenial
     packages:
+      - git-lfs
       - nginx
       - realpath
       - lftp
